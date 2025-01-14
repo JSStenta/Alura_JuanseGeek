@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta nombre="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenge JuanseGeek</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="contenedor-encabezado">
+                <img class="logo" src="./assets/logo.png" alt="Logo JuanseGeek">
+                <h1>JuanseGeek</h1>
+                <img class="logo" src="./assets/logo.png" alt="Logo JuanseGeek">
+            </div>
+        </header>
+        <main>
+            <section class="seccion-formulario">
+                <h1>Agregar Producto</h1>
+                <form id="formulario-producto">
+                    <input id="nombre-producto" type="text" placeholder="Nombre..." required>
+                    <input id="precio-producto" type="number" min="0" placeholder="Precio..." required>
+                    <input id="imagen-producto" type="url" placeholder="URL de imagen..." required>
+
+                    <div class="botones-formulario">
+                        <button type="submit">Agregar</button>
+                        <button type="reset">Limpiar</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="seccion-lista-productos">
+                <h2>Lista de Productos</h2>
+                <div class="lista-productos"></div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <img class="logo" src="./assets/logo.png" alt="Logo JuanseGeek">
+                <p>Desarrollado por Juanse</p>
+                <p>2025 - Proyecto para Alura</p>
+            </div>
+        </footer>
+    </body>
+
+</html>
