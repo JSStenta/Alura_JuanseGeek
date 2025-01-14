@@ -1,6 +1,6 @@
 //main.js
 
-import { getProductos } from "./api.js";
+import { obtenerProductos } from "./api.js";
 import { renderizarTarjetaProducto, limpiarListaProductos, agregarProductoAlDOM, } from "./dom.js";
 import { manejarEnvioFormulario, manejarClickEliminar } from "./events.js";
 
@@ -12,7 +12,7 @@ const formularioProducto = document.getElementById("formulario-producto");
  */
 export const renderizarProductos = async () => {
     limpiarListaProductos(listaProductos);
-    const productos = await getProductos();
+    const productos = await obtenerProductos();
 
     productos.forEach((producto) => {
         const productoHTML = renderizarTarjetaProducto(producto);

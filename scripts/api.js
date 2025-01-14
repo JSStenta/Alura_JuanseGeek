@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3000/productos";
+const BASE_URL = "http://localhost:3001/productos";
 
 export const obtenerProductos = async () => {
     try {
@@ -24,6 +24,7 @@ export const crearProducto = async (producto) => {
 
 export const eliminarProducto = async (id) => {
     try {
+        console.log('Se elimina: ' + id);
         await fetch(`${BASE_URL}/${id}`, { method: "DELETE" });
     } catch (error) {
         console.error("Error eliminando producto:", error);

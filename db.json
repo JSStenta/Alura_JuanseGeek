@@ -1,0 +1,22 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "nombre": "Stormtrooper",
+      "precio": 900,
+      "imagen": "https://acdn.mitiendanube.com/stores/814/563/products/304d3ca35b1cdc8b038c3337e8a9bf32_800x1-a31baac780ed8c0b6215948413189623-1024-1024.jpg"
+    },
+    {
+      "id": "3",
+      "nombre": "aljadoif",
+      "precio": 123121312,
+      "imagen": "https://acdn.mitiendanube.com/stores/814/563/products/304d3ca35b1cdc8b038c3337e8a9bf32_800x1-a31baac780ed8c0b6215948413189623-1024-1024.jpg"
+    },
+    {
+      "id": "e774",
+      "nombre": "Libro que le gusta a Flor",
+      "precio": 16000,
+      "imagen": "https://phantom-telva.unidadeditorial.es/d58c7b9eb89f3c3ac389acf8819f7c6d/resize/640/assets/multimedia/imagenes/2020/07/03/15937715704565.jpg"
+    }
+  ]
+}

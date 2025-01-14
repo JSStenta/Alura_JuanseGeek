@@ -8,7 +8,7 @@ export const manejarEnvioFormulario = async (e, formulario, listaProductos) => {
 
   const nuevoProducto = {
     nombre: formulario["nombre-producto"].value,
-    precio: parseFloat(formulario["precio-producto"].value),
+    precio: parseInt(formulario["precio-producto"].value),
     imagen: formulario["imagen-producto"].value,
   };
 

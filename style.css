@@ -1,9 +1,10 @@
 /* ---------------------------- Estilos generales ---------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
 
 :root {
     /* LIGHT MODE */
-    --color-fondo-principal: #FFFFFF;
+    --color-fondo-principal: #F0F0F0;
     --color-fondo-secundario: #E6F7FF;
     --color-texto-principal: #003366;
     --color-resaltado: #FFD700;
@@ -32,10 +33,17 @@ body {
     color: var(--color-texto-principal);
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+}
+
 /* ---------------------------- Estilos del encabezado ---------------------------- */
 header {
     background-color: var(--color-fondo-secundario);
     padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0 0 .5rem var(--color-resaltado);
 }
 
 .logo {
@@ -44,18 +52,21 @@ header {
     object-fit: contain;
 }
 
-.contenedor-encabezado {
+.contenedor-encabezado,
+footer {
     display: flex;
     justify-content: space-evenly;
+    flex-direction: row;
 }
 
 /* ---------------------------- Estilos del formulario ---------------------------- */
 .seccion-formulario {
-    flex: 1 1 45%;
+    flex: 1 1 10%;
     margin: 1rem;
     background-color: var(--color-fondo-secundario);
     padding: 1rem;
-    border-radius: 8px;
+    border-radius: 1%;
+    box-shadow: 0 0 .5rem var(--color-resaltado);
 }
 
 form {
@@ -67,7 +78,7 @@ form {
 form input {
     padding: 0.5rem;
     border: 1px solid var(--color-texto-principal);
-    border-radius: 4px;
+    border-radius: .5rem;
     background-color: var(--color-fondo-principal);
     color: var(--color-texto-principal);
     font-size: 1rem;
@@ -75,19 +86,19 @@ form input {
 
 form input::placeholder {
     color: var(--color-texto-principal);
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 .botones-formulario {
     display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
+    justify-content: center;
+    gap: 1rem;
 }
 
 button {
     padding: 0.5rem 1rem;
     border: none;
-    border-radius: 4px;
+    border-radius: .5rem;
     cursor: pointer;
     font-weight: 500;
 }
@@ -103,9 +114,10 @@ button[type="reset"] {
 }
 
 /* ---------------------------- Estilos de la lista de productos ---------------------------- */
-.seccion-productos {
+.seccion-lista-productos {
     flex: 1 1 45%;
     margin: 1rem;
+    padding: 1rem;
 }
 
 .lista-productos {
@@ -115,14 +127,15 @@ button[type="reset"] {
 }
 
 .tarjeta {
-    background-color: var(--color-fondo-principal);
-    border: 1px solid var(--color-texto-principal);
+    background-color: var(--color-fondo-secundario);
     border-radius: 4px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 .5rem var(--color-resaltado);
+    padding: 1rem;
 }
 
-.tarjeta img {
+.tarjeta-imagen {
+    border-radius: inherit;
     width: 100%;
 }
 
@@ -136,12 +149,19 @@ button[type="reset"] {
     align-items: center;
 }
 
+.material-symbols-outlined {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
 /* ---------------------------- Estilos del pie de página ---------------------------- */
 footer {
     background-color: var(--color-fondo-secundario);
     color: var(--color-texto-principal);
     text-align: center;
     padding: 1rem 0;
+    box-shadow: 0 0 .5rem var(--color-resaltado);
+    border-radius: 1rem 1rem 0 0;
 }
 
 .contenedor-pie {
@@ -153,17 +173,19 @@ footer {
 /* ---------------------------- Estilos responsivos ---------------------------- */
 @media (max-width: 768px) {
     main {
+        display: block;
         flex-direction: column;
         align-items: center;
     }
 
-    .contenedor-encabezado {
+    .contenedor-encabezado,
+    footer {
         flex-direction: column;
         align-items: center;
     }
 
     .seccion-formulario,
-    .seccion-productos {
+    .seccion-lista-productos {
         flex: 1 1 100%;
     }
 }

@@ -3,7 +3,16 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta nombre="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Challenge JuanseGeek - Proyecto para Alura">
+        <meta name="keywords" content="JuanseGeek, Alura, Proyecto, Productos">
+        <meta name="author" content="Juan Sebastian Stenta">
+        <meta name="robots" content="index, follow">
+        <link type="image/x-icon" href="./assets/favicon.png" rel="icon">
+        <meta property="og:title" content="Challenge JuanseGeek">
+        <meta property="og:description" content="Proyecto para Alura desarrollado por Juan Sebastian Stenta">
+        <meta property="og:image" content="./assets/logo.png">
+        <meta property="og:url" content="http://www.juansegeek.com">
         <title>Challenge JuanseGeek</title>
         <link href="style.css" rel="stylesheet">
     </head>
@@ -25,8 +34,8 @@
                     <input id="imagen-producto" type="url" placeholder="URL de imagen..." required>
 
                     <div class="botones-formulario">
-                        <button type="submit">Agregar</button>
                         <button type="reset">Limpiar</button>
+                        <button type="submit">Agregar</button>
                     </div>
                 </form>
             </section>
@@ -34,14 +43,16 @@
             <section class="seccion-lista-productos">
                 <h2>Lista de Productos</h2>
                 <div class="lista-productos"></div>
+                <script src="scripts/main.js" type="module"></script>
             </section>
         </main>
         <footer>
+            <img class="logo" src="./assets/logo.png" alt="Logo JuanseGeek">
             <div class="footer-container">
-                <img class="logo" src="./assets/logo.png" alt="Logo JuanseGeek">
-                <p>Desarrollado por Juanse</p>
+                <p>Desarrollado por Juan Sebastian Stenta</p>
                 <p>2025 - Proyecto para Alura</p>
             </div>
+            <img class="logo" src="./assets/logo.png" alt="Logo JuanseGeek">
         </footer>
     </body>
 
