@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"description": "Una aplicación web interactiva para gestionar productos geek, desarrollada como parte del desafío de Alura Latam. Permite agregar, listar y eliminar productos a través de una interfaz intuitiva, conectada a un servidor simulado con JSON Server. Incluye validación de formularios, manejo dinámico del DOM y un diseño responsivo adaptable a diferentes dispositivos.",
 	"main": "index.js",
+	"type": "module",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -17,6 +18,7 @@
 	},
 	"homepage": "https://github.com/JSStenta/Alura_JuanseGeek#readme",
 	"dependencies": {
+		"dotenv": "^16.4.7",
 		"json-server": "^1.0.0-beta.3"
 	}
 }
